@@ -26,7 +26,7 @@ SAVE_INFO = True
 4. Extract conductivity data using from_files
 """
 
-with MPRester("KTlxQGR0PshFBAS4") as mp:
+with MPRester("xxxxxxxxxxxxxx") as mp:
 	banddata = mp.query(criteria={"task_id": "mp-804"}, properties=["band_structure_uniform"])
 	banddata = mp.get_data("mp-1186", prop="bandstructure")
 	bs = banddata[0]["bandstructure"]
